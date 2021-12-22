@@ -1,0 +1,116 @@
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+<div class="container">
+    <h4 class="text-center">Автоматизация процесса проверочного расчета цилиндрической зубчатой передачи на изгибную выносливость зубьев</h4>
+
+    <form>
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="aw">
+            <label for="aw">Межосевое расстояние</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="bw">
+            <label for="bw">Ширина венца колес</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="u">
+            <label for="u">Передаточное число</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="B">
+            <label for="B">Угл наклона линии зуба по длительному цилиндру</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="m">
+            <label for="m">Модуль m</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="z1">
+            <label for="z1">Число зубьев шестерни</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="z2">
+            <label for="z2">Число зубьев колеса</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="fdb">
+            <label for="fdb">Относительная ширина колеса</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="hb">
+            <label for="hb">Твердость рабочих пов зубьев</label>
+        </div>
+
+        <div class="col-md mb-3">
+            <div class="form-floating">
+                <select class="form-select" id="gearLocationType" aria-label="Floating label select example">
+                    <option value="SYMMETRICAL">Симметричное</option>
+                    <option value="NON_SYMMETRICAL">Не симметричное</option>
+                    <option value="CONSOLE">Консольное</option>
+                </select>
+                <label for="gearLocationType">Расположение шестерни относительн опоры</label>
+            </div>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="x">
+            <label for="x">Коэф смещения</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="zv">
+            <label for="zv">Эквивалнтное число зубьев</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="Yf">
+            <label for="Yf">Коэффициент учитывающий форму зубьев для зкбчатых колес внешнего зацепления</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="aFP">
+            <label for="aFP">Допускаемое напряжение</label>
+        </div>
+
+        <div class="col-md mb-3">
+            <div class="form-floating">
+                <select class="form-select" id="toothType" aria-label="Floating label select example">
+                    <option value="KOSOZUBAYA_AND_CHEVRONNY">Косозубая</option>
+                    <option value="RIGHT_TOOTH">Правозубая</option>
+                </select>
+                <label for="gearLocationType">Тип зуба</label>
+            </div>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="true" id="isShaftRigid">
+            <label class="form-check-label" for="isShaftRigid">
+                Вал является весьма жестким?
+            </label>
+        </div>
+
+        <div class="d-grid gap-2 col-6 mx-auto mb-3">
+            <button class="btn btn-primary" type="button" id="calculation-button">Рассчитать</button>
+            <a class="btn btn-primary" type="button" href="../database">Посмотреть рассчеты</a>
+        </div>
+
+        <div class="form-floating mb-3" id="result"></div>
+    </form>
+</div>
+
+<script type="text/javascript" src="/static/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
